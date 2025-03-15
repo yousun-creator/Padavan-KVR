@@ -1114,6 +1114,7 @@
 				return false;
 			} else if (ssu[0] == "vmess") {
 				var sstr = b64DecodeUnicode(ssu[1]);
+				console.log(sstr);
 				var ploc = sstr.indexOf("/?");
 				document.getElementById('ssp_type').value = "v2ray";
 				document.getElementById('ssp_type').dispatchEvent(event);
